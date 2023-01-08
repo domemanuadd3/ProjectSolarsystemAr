@@ -6,24 +6,80 @@
     </head>
     <body>
 
-      <a-scene mindar-image="imageTargetSrc: ./targets.mind; maxTrack: 2" color-space="sRGB" renderer="colorManagement: true, physicallyCorrectLights" vr-mode-ui="enabled: false" device-orientation-permission-ui="enabled: false">
+      <a-scene mindar-image="imageTargetSrc: ./targets.mind; maxTrack: 8" color-space="sRGB" renderer="colorManagement: true, physicallyCorrectLights" vr-mode-ui="enabled: false" device-orientation-permission-ui="enabled: false">
         <a-assets>
           <img id="card0" src="Sun.png" />
-          <a-asset-item id="avatarModel0" src="Sun.glb"></a-asset-item>
+          <a-asset-item id="avatarModel0" src="3D model/Sun.glb"></a-asset-item>
         </a-assets>
         <a-assets>
           <img id="card1" src="earth.png" />
-          <a-asset-item id="avatarModel0" src="Mars.glb"></a-asset-item>
+          <a-asset-item id="avatarModel1" src="3D model/Mercury.glb"></a-asset-item>
+        </a-assets>
+        <a-assets>
+          <img id="card2" src="earth.png" />
+          <a-asset-item id="avatarModel2" src="3D model/Venus.glb"></a-asset-item>
+        </a-assets>
+        <a-assets>
+          <img id="card3" src="earth.png" />
+          <a-asset-item id="avatarModel3" src="3D model/Earth.glb"></a-asset-item>
+        </a-assets>
+        <a-assets>
+          <img id="card4" src="earth.png" />
+          <a-asset-item id="avatarModel4" src="3D model/Mars.glb"></a-asset-item>
+        </a-assets>
+        <a-assets>
+          <img id="card5" src="earth.png" />
+          <a-asset-item id="avatarModel5" src="3D model/Jupiter.glb"></a-asset-item>
+        </a-assets>
+        <a-assets>
+          <img id="card6" src="earth.png" />
+          <a-asset-item id="avatarModel6" src="3D model/Saturn.glb"></a-asset-item>
+        </a-assets>
+        <a-assets>
+          <img id="card7" src="earth.png" />
+          <a-asset-item id="avatarModel7" src="3D model/Neptune.glb"></a-asset-item>
+        </a-assets>
+        <a-assets>
+          <img id="card8" src="earth.png" />
+          <a-asset-item id="avatarModel8" src="3D model/Uranus.glb"></a-asset-item>
         </a-assets>
   
         <a-camera position="0 0 0" look-controls="enabled: false"></a-camera>
         <a-entity mindar-image-target="targetIndex: 0">
           <a-plane src="#card0" position="0.5 0 0" height="1" width="1" rotation="0 0 0"></a-plane>
-          <a-gltf-model rotation="0 0 0 " position="0 0 0.1" scale="0.001 0.001 0.001" src="#avatarModel" animation="property: position; to: 0 0 0; dur: 1000; easing: easeInOutQuad; loop: true; dir: alternate">
+          <a-gltf-model rotation="0 0 0 " position="0 0 0.1" scale="0.001 0.001 0.001" src="#avatarModel0" animation="property: position; to: 0 0 0; dur: 1000; easing: easeInOutQuad; loop: true; dir: alternate">
         </a-entity>
         <a-entity mindar-image-target="targetIndex: 1">
           <a-plane src="#card1" position="0.05 0 0" height="1" width="1" rotation="0 0 0"></a-plane>
-          <a-gltf-model rotation="0 0 0 " position="0 0 0.1" scale="0.001 0.001 0.001" src="#avatarModel" animation="property: position; to: 0 0 0; dur: 1000; easing: easeInOutQuad; loop: true; dir: alternate">
+          <a-gltf-model rotation="0 0 0 " position="0 0 0.1" scale="0.001 0.001 0.001" src="#avatarModel1" animation="property: position; to: 0 0 0; dur: 1000; easing: easeInOutQuad; loop: true; dir: alternate">
+        </a-entity>
+        <a-entity mindar-image-target="targetIndex: 2">
+          <a-plane src="#card2" position="0.05 0 0" height="1" width="1" rotation="0 0 0"></a-plane>
+          <a-gltf-model rotation="0 0 0 " position="0 0 0.1" scale="0.001 0.001 0.001" src="#avatarModel2" animation="property: position; to: 0 0 0; dur: 1000; easing: easeInOutQuad; loop: true; dir: alternate">
+        </a-entity>
+        <a-entity mindar-image-target="targetIndex: 3">
+          <a-plane src="#card3" position="0.05 0 0" height="1" width="1" rotation="0 0 0"></a-plane>
+          <a-gltf-model rotation="0 0 0 " position="0 0 0.1" scale="0.001 0.001 0.001" src="#avatarModel3" animation="property: position; to: 0 0 0; dur: 1000; easing: easeInOutQuad; loop: true; dir: alternate">
+        </a-entity>
+        <a-entity mindar-image-target="targetIndex: 4">
+          <a-plane src="#card4" position="0.05 0 0" height="1" width="1" rotation="0 0 0"></a-plane>
+          <a-gltf-model rotation="0 0 0 " position="0 0 0.1" scale="0.001 0.001 0.001" src="#avatarModel4" animation="property: position; to: 0 0 0; dur: 1000; easing: easeInOutQuad; loop: true; dir: alternate">
+        </a-entity>
+        <a-entity mindar-image-target="targetIndex: 5">
+          <a-plane src="#card5" position="0.05 0 0" height="1" width="1" rotation="0 0 0"></a-plane>
+          <a-gltf-model rotation="0 0 0 " position="0 0 0.1" scale="0.001 0.001 0.001" src="#avatarModel5" animation="property: position; to: 0 0 0; dur: 1000; easing: easeInOutQuad; loop: true; dir: alternate">
+        </a-entity>
+        <a-entity mindar-image-target="targetIndex: 6">
+          <a-plane src="#card6" position="0.05 0 0" height="1" width="1" rotation="0 0 0"></a-plane>
+          <a-gltf-model rotation="0 0 0 " position="0 0 0.1" scale="0.001 0.001 0.001" src="#avatarModel6" animation="property: position; to: 0 0 0; dur: 1000; easing: easeInOutQuad; loop: true; dir: alternate">
+        </a-entity>
+        <a-entity mindar-image-target="targetIndex: 7">
+          <a-plane src="#card7" position="0.05 0 0" height="1" width="1" rotation="0 0 0"></a-plane>
+          <a-gltf-model rotation="0 0 0 " position="0 0 0.1" scale="0.001 0.001 0.001" src="#avatarModel7" animation="property: position; to: 0 0 0; dur: 1000; easing: easeInOutQuad; loop: true; dir: alternate">
+        </a-entity>
+        <a-entity mindar-image-target="targetIndex: 8">
+          <a-plane src="#card8" position="0.05 0 0" height="1" width="1" rotation="0 0 0"></a-plane>
+          <a-gltf-model rotation="0 0 0 " position="0 0 0.1" scale="0.001 0.001 0.001" src="#avatarModel8" animation="property: position; to: 0 0 0; dur: 1000; easing: easeInOutQuad; loop: true; dir: alternate">
         </a-entity>
       </a-scene>
       
